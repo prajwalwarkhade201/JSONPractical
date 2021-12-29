@@ -1,0 +1,94 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      JSON Project
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="main">
+    <div class="card">
+      <div>
+        <h1>Student Information</h1>
+  
+      </div>
+
+      <form class="col" #studForm="ngForm" (submit)="saveStudent(studForm)">
+
+        
+
+        <div class="form-group mb-3">
+          <input class="form-control form-control-lg"   placeholder="First Name" [(ngModel)]="f_Name" type="text" name="f_Name" ngModel required >
+         
+        </div>
+
+        <div class="form-group mb-3">
+          <input class="form-control form-control-lg" required placeholder="Last Name" type="text" name="l_Name"
+            ngModel>
+        </div>
+
+        <div class="form-group mb-3">
+          <input class="form-control form-control-lg" #email="ngModel" required placeholder="Email" type="email" name="email" pattern = "^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"  ngModel>
+
+          <p class="is-invalid" *ngIf="email.invalid  && email.dirty && email.value!=='' "  >
+           *Please enter a Valid Email ID
+          </p>
+        </div>
+
+        <div class="form-group mb-3">
+          <input class="form-control form-control-lg" required  placeholder="Mobile No." type="number" name="mob_No"
+            ngModel>
+
+
+        </div>
+
+        <div class="form-group mb-3">
+          <!-- <input class="form-control form-control-lg" required placeholder="Collage Name" type="text" name="col_Name" ngModel> -->
+          <input class="form-control form-control-lg" list="datalistOptions" type="text" required placeholder="Collage Name"
+            name="col_Name" ngModel>
+          <datalist id="datalistOptions">
+            <option  *ngFor="let data of collages" [value]="data.name">
+           
+          </datalist>
+        </div>
+
+        <div class="form-group mb-3">
+          <!-- <input class="form-control form-control-lg" required placeholder="Branch" type="text"  name="Branch" ngModel> -->
+          <input class="form-control form-control-lg" list="datalistOptions1" required type="text" placeholder="Branch" name="Branch"
+            ngModel>
+          <datalist id="datalistOptions1">
+            <option *ngFor="let data of branch" [value]="data.name">
+
+          </datalist>
+        </div>
+
+
+
+
+        <div class="d-grid gap-2 col-6 mb-2 mx-auto">
+          <button class="btn btn-primary" [disabled]="studForm.invalid" type="submit">Add Student</button>
+        </div>
+
+      </form>
+
+      <div class="d-grid gap-2 col-6   mx-auto">
+        <button class="btn btn-primary"  (click)="showStudent()" >Show Student</button>
+      </div>
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+ 
+
+
+
+</ion-content>

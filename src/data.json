@@ -1,0 +1,58 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "f_Name": "Manish",
+      "l_Name": "Sharma",
+      "email": "manish@sharma.com",
+      "mob_No": "6874736800",
+      "col_Name": "VSSS",
+      "Branch": "B.Tech EE"
+    },
+    {
+      "id": 3,
+      "f_Name": "Shetal",
+      "l_Name": "Shetty",
+      "email": "Shetal@shetty.com",
+      "mob_No": "2101544377",
+      "col_Name": "BGHU",
+      "Branch": "UPSC"
+    },
+    {
+      "f_Name": "Dada",
+      "l_Name": "Lala",
+      "email": "dada@mama.com",
+      "mob_No": 1452367890,
+      "col_Name": "Sardar Patel Institute of Technology",
+      "Branch": "MCA",
+      "id": 6
+    },
+    {
+      "f_Name": "Sanket",
+      "l_Name": "Parate",
+      "email": "sanket@parate.com",
+      "mob_No": 4354348050,
+      "col_Name": "St. Xaviers College",
+      "Branch": "AI ",
+      "id": 7
+    },
+    {
+      "f_Name": "fjfjhfjh",
+      "l_Name": "fytyj",
+      "email": "cghdgdg@bcgb.com",
+      "mob_No": 53741687164,
+      "col_Name": "St. Xaviers College",
+      "Branch": "Computer Technology",
+      "id": 8
+    },
+    {
+      "f_Name": "Prajwalit",
+      "l_Name": "Wasnik",
+      "email": "was@nuk.com",
+      "mob_No": 3213464513,
+      "col_Name": "Indian Institute Of Technology",
+      "Branch": "MCA",
+      "id": 11
+    }
+  ]
+}
